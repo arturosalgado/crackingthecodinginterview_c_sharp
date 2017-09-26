@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneEditAway.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="Programs.cs" />
     <Compile Include="StringCompress.cs" />
     <Compile Include="Strings1.cs" />

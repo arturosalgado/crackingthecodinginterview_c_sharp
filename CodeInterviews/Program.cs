@@ -11,8 +11,11 @@ namespace CodeInterviews
         static void Main(string[] args)
         {
 
+
+            Programs.callMatrix();
+
             //Programs.call();
-            Programs.call3();
+            //Programs.call3();
             Console.ReadKey();
 
         }

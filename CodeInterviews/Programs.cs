@@ -8,6 +8,26 @@ namespace CodeInterviews
 {
     class Programs
     {
+
+        public static void callMatrix()
+        {
+            int[,] m = { { 1,2,3} ,
+                         { 4,5,6},
+                         { 7,8,9} };
+
+
+            int[,] t =Matrix.createMatrix(4);
+            Matrix.PrintMatrix(t);
+
+            
+
+
+
+
+            Console.ReadKey();
+
+        }
+
         public static void call() {
             string s1 = "Papas";
             string s2 = "Pap";
