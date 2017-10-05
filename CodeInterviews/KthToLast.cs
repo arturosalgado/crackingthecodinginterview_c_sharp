@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace CodeInterviews
 {
-    class Program
+    class KthToLast
     {
-        static void Main(string[] args)
-        {
+
+        public static Node kthToLast(Node n) {
 
 
-            Programs.callRemove();
-            Console.ReadKey();
 
+            
         }
+
     }
 }

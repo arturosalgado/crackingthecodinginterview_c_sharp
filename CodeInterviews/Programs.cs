@@ -9,17 +9,84 @@ namespace CodeInterviews
     class Programs
     {
 
-        public static void callMatrix()
+        public static void callKthToLast()
         {
-            int[,] m = { { 1,2,3} ,
-                         { 4,5,6},
-                         { 7,8,9} };
-
-
-            int[,] t =Matrix.createMatrix(4);
-            Matrix.PrintMatrix(t);
 
             
+            int[] array = { 1, 1, 2, 3, 4, 4, 5, 6, 4, 7 };
+            Node list = Node.createList(array);
+
+            Node.traverse(list);
+
+            Node kth = KthToLast.kthToLast(list);
+
+
+            Console.WriteLine();
+
+           
+
+
+        }
+
+
+
+        public static void callRemove()
+        {
+
+            //Node list = Node.createList(10);
+            //Node.traverse(list);
+            //Console.WriteLine();
+            int[] array = { 1, 1, 2, 3, 4, 4, 5, 6, 4, 7 };
+            Node list2 = Node.createList(array);
+
+            Node.traverse(list2);
+
+            list2 = RemoveDups.remove3(list2);
+
+            Console.WriteLine();
+
+            Node.traverse(list2);
+
+
+        }
+
+        public static void callIsRotation() {
+
+            string s1 = "watterbottle";
+            string s2 = "houes";
+
+            bool  rotation = IsRotation.isRotation(s1,s2);
+            Console.Write(" is rotation {0} {1} {2}",s1,s2,rotation);
+
+
+
+
+        }
+
+
+        public static void callMatrix()
+        {
+            int[,] m = { { 1,2} ,
+                         { 3,4 }};
+
+            int[,] m2 = { { 1,2,3} ,
+                          { 4,5,6},
+                          { 7,8,9}
+
+                        };
+
+
+            m = Nullify.createMatrix(5);
+            Nullify.PrintMatrix(m);
+            Console.WriteLine();
+            Nullify.nullify(m);
+            Nullify.PrintMatrix(m);
+
+            Console.WriteLine();
+           
+           
+                
+
 
 
 
@@ -80,6 +147,8 @@ namespace CodeInterviews
 
 
         }
+
+       
 
     }
 }

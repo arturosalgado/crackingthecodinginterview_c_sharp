@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IsRotation.cs" />
+    <Compile Include="Nullify.cs" />
     <Compile Include="OneEditAway.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="Programs.cs" />
+    <Compile Include="RemoveDups.cs" />
     <Compile Include="StringCompress.cs" />
     <Compile Include="Strings1.cs" />
     <Compile Include="Utils.cs" />
