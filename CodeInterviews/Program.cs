@@ -12,7 +12,7 @@ namespace CodeInterviews
         {
 
 
-            Programs.callRemove();
+            Programs.callPalindromeNumber();
             Console.ReadKey();
 
         }

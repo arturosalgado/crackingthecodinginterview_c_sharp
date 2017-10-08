@@ -9,18 +9,30 @@ namespace CodeInterviews
     class Programs
     {
 
+        public static void callPalindromeNumber() {
+
+
+            int number = 252;
+            bool b =  PalindromeNumber.isPalindrome(number);
+            Console.WriteLine(b);
+
+
+        }
+
+
         public static void callKthToLast()
         {
 
             
             int[] array = { 1, 1, 2, 3, 4, 4, 5, 6, 4, 7 };
             Node list = Node.createList(array);
-
+            Console.Write("List \n");
             Node.traverse(list);
-
-            Node kth = KthToLast.kthToLast(list);
-
-
+            Console.Write(" \n");
+            Console.Write("NOde ");
+            //int t =  KthToLast.kthToLast(list,3);
+            int visited = KthToLast.visitNodes(list);
+            Console.Write("{0}", visited);
             Console.WriteLine();
 
            
