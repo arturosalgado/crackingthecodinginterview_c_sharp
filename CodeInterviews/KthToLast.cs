@@ -20,7 +20,21 @@ namespace CodeInterviews
         }
 
 
-        public static int visitNodes(Node n)
+        public static int kthToLast2(Node n, int k,out Node found)
+        {
+            found = null;
+            Console.WriteLine("\nReceivedddd {0}", n);
+            if (n == null)
+                return 0;
+            int index = kthToLast2(n.Next, k,out found) + 1;
+            if (index == k)
+            {
+                found = n;
+                //Console.Write("kth element is {0}", n.Value);
+            }
+            return index;
+        }
+        public static int  visitNodes(Node n)
         {
 
             if (n == null)

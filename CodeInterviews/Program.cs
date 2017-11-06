@@ -11,8 +11,9 @@ namespace CodeInterviews
         static void Main(string[] args)
         {
 
-
-            Programs.callPalindromeNumber();
+            Programs.callDeleteNode();
+            
+            
             Console.ReadKey();
 
         }

@@ -8,13 +8,39 @@ namespace CodeInterviews
 {
     class Programs
     {
+        public static void callDeleteNode()
+        {
+
+            int [] nodes = { 1,2,3,4,5,6};
+            Node head = Node.createList(nodes);
+            Console.WriteLine("Before delete");
+            Node.traverse(head);
+            Node mid = head.Next.Next;
+
+            DeleteMiddleNode.deleteMiddleNode(mid);
+            Console.WriteLine("After delete");
+            Node.traverse(head);
+
+        }
+
+
 
         public static void callPalindromeNumber() {
 
 
-            int number = 252;
+            int number = 5678765;
             bool b =  PalindromeNumber.isPalindrome(number);
-            Console.WriteLine(b);
+            Console.WriteLine("{0},{1}",number,b);
+
+
+        }
+        public static void callPalindromeNumber2(int number)
+        {
+
+
+            //int number = 252;
+            bool b = PalindromeNumber.isPalindrome2(number);
+            Console.WriteLine("{0},{1}", number, b);
 
 
         }
@@ -26,13 +52,18 @@ namespace CodeInterviews
             
             int[] array = { 1, 1, 2, 3, 4, 4, 5, 6, 4, 7 };
             Node list = Node.createList(array);
-            Console.Write("List \n");
+            Console.Write("List is : \n");
             Node.traverse(list);
             Console.Write(" \n");
-            Console.Write("NOde ");
-            //int t =  KthToLast.kthToLast(list,3);
-            int visited = KthToLast.visitNodes(list);
-            Console.Write("{0}", visited);
+            Console.Write("NOded ");
+
+            int k = 3;
+            Node found = null;
+            int visited = KthToLast.kthToLast2(list,k,out found);
+            if (found != null) { 
+                Console.Write("Found {0}",found);
+
+            }
             Console.WriteLine();
 
            
